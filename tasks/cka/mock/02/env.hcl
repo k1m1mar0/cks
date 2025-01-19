@@ -3,10 +3,10 @@ locals {
   solutions_scripts="https://github.com/ViktorUJ/cks/tree/master/tasks/cka/mock/02/worker/files/solutions"
   solutions_video="https://youtu.be/ia6Vw_BR-L0"
   region = "us-east-1"
-  vpc_default_cidr =  "172.31.0.0/16"
+  vpc_default_cidr =  "10.2.0.0/16"
   az_ids = {
-    "172.31.48.0/20"  = "use1-az3"
-    "172.31.80.0/20" = "use1-az2"
+    "10.2.0.0/19"  = "use1-az1"
+    "10.2.32.0/19" = "use1-az2"
   }
   aws    = "default"
   prefix = "cka-mock"
