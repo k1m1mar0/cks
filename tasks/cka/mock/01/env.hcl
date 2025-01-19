@@ -2,11 +2,11 @@ locals {
   questions_list="https://github.com/ViktorUJ/cks/blob/master/tasks/cka/mock/01/README.MD"
   solutions_scripts="https://github.com/ViktorUJ/cks/tree/master/tasks/cka/mock/01/worker/files/solutions"
   solutions_video="https://youtu.be/IZsqAPpbBxM"
-  region = "eu-north-1"
-  vpc_default_cidr =  "10.2.0.0/16"
+  region = "us-east-1"
+  vpc_default_cidr =  "172.31.0.0/16"
   az_ids = {
-    "10.2.0.0/19"  = "eun1-az3"
-    "10.2.32.0/19" = "eun1-az2"
+    "172.31.48.0/20"  = "use1-az3"
+    "172.31.80.0/20" = "use1-az2"
   }
   aws    = "default"
   prefix = "cka-mock"
@@ -15,7 +15,7 @@ locals {
     "env_type"        = "dev"
     "manage"          = "terraform"
     "cost_allocation" = "dev"
-    "owner"           = "viktoruj@gmail.com"
+    "owner"           = "yurybruy@gmail.com"
   }
   k8_version           = "1.30.0"
   node_type            = "spot"
